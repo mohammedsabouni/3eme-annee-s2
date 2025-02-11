@@ -6,6 +6,7 @@
             float x;
             float y;
             char nom;
+            static int cmpt;
         public:
             void saisie();
             void affiche();
