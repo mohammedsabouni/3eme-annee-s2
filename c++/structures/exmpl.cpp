@@ -1,14 +1,16 @@
 #include<iostream>
 
 
-struct Point
+class Point
 {
-    float x;
-    float y;
-    char nom;
+    private:
+        float x;
+        float y;
+        char nom;
 
-    void saisie();
-    void affiche();
+    public:
+        void saisie();
+        void affiche();
 };
 
 int main(){
@@ -19,6 +21,7 @@ int main(){
     A.affiche();
     B->affiche();
 
+    delete B;
     return 0;
     
 }
