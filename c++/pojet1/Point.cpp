@@ -5,11 +5,12 @@ int Point::cmpt = 0;
 
 void Point::saisie(){
     std::cout << "entrez x , y et nom" << std::endl;
-    std::cin>>this->x>>this->y>>this->nom;
+    std::cin>>this->x>>this->y>>this->nom;//this est un pointeur vers l objet qui va appeler (objet implicite)
     Point::cmpt++;
 }
 
-void Point::affiche(){
-    std::cout << this->nom << "("<< this->x << " , "<< this->y << ")" << std::endl;
-    std::cout << "nombre de points : "<< Point::cmpt << std::endl;
+
+//methode de classe 
+void Point::affiche_nbre(){
+    std::cout<<"Nombre de points = " << Point::cmpt << std::endl;
 }

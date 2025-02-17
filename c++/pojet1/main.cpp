@@ -9,5 +9,7 @@ int main(){
     A.affiche();
     B->affiche();
 
+    Point::affiche_nbre();
+
     return 0;
 }
