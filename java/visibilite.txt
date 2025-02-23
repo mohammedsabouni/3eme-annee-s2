@@ -1,0 +1,4 @@
+#protected : 
+  seul les elements du package + heritiers peuves y accedes
+#default :
+  seul les elements du package peuvent y accede
