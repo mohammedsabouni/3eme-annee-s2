@@ -8,7 +8,7 @@ Pile::Pile(int t){
 }
 
 Pile::~Pile(){
-    delete adr;
+    delete []adr;
 }
 
 void Pile::empile(int x){
@@ -16,17 +16,8 @@ void Pile::empile(int x){
     {
         std::cout << "La pile est pleine" << std::endl;
     }
-    else if (this->vide())
-    {
-        *(adr + (dim-1)) = x;
-        taille++;
-    }
-    else{
-        for (int* p1 = adr+(dim-taille); p1 < adr+dim; p1++)
-        {
-            *(p1-1) = *(p1);
-        }
-        *(adr + (dim-1)) = x;
+    else {
+        *(adr+taille) = x;
         taille++;
     }
     
@@ -39,9 +30,6 @@ void Pile::depile(){
         std::cout << "la Pile est deja vide" << std::endl;
     }
     else{
-        for(int* p1 = adr+(dim-1); p1 >= adr+(dim-taille); p1--){
-            *(p1) = *(p1-1);
-        }
         taille--;
     }
     
