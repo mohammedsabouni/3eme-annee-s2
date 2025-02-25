@@ -4,7 +4,8 @@ public class Main {
         Etudiant e2 = new Etudiant("f2", "azzam","sabrine", 20);
         e1.afficher();
         e2.afficher();
-
+        e1.setCin("f10");
+        System.out.println(e1.getCin());
 
     }
 }
