@@ -2,7 +2,8 @@
 #include"Point.hpp"
 
 int main(){
-    Point A, *B, C(2,3,"ABC");
+    Point A, *B;
+    const Point C(2,3,"ABC");
     B = new Point(1.3, "BBB");
     A.affiche();
     // A.saisie();

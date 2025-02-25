@@ -13,7 +13,7 @@
             Point(const float &, const float &, const char * );
             ~Point();//destructeur on peut avoir un seule
             void saisie();
-            void affiche();
+            void affiche() const;
                
     };
        
