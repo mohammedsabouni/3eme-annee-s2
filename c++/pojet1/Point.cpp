@@ -7,7 +7,7 @@ void Point::saisie(){
     std::cin>>this->x>>this->y>>this->nom;
 }
 
-void Point::affiche(){
+void Point::affiche() const{
     std::cout << this->nom << "("<< this->x << " , "<< this->y << ")" << std::endl;
 }
 
