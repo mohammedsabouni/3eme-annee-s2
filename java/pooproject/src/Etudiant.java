@@ -1,6 +1,6 @@
 public class Etudiant {
-    public String cin;
-    private String nom;
+    private String cin;
+    public String nom;
     protected String prenom;
     int age;
 
@@ -13,5 +13,13 @@ public class Etudiant {
 
     public void afficher(){
         System.out.println("cin : " + cin + " nom : " + nom + " prenom : " + prenom + " age : " + age );
+    }
+
+    public String getCin(){
+        return cin;
+    }
+
+    public void setCin(String cin){
+        this.cin = cin;
     }
 }
