@@ -39,7 +39,30 @@ Point::Point(const float & x_, const float & y_, const char *  nom_){
 
 }
 
+Point::Point(const Point & obj){
+    x = obj.x;
+    y = obj.y;
+    nom = new char[strlen(obj.nom)+1];
+    strcpy(nom, obj.nom);
+    Point::nbrpt++;
+    std::cout << "constructeur de recopie" << std::endl;
+    
+}
+
 Point::~Point(){
     delete nom;
     std::cout << "Destructeur" << std::endl; 
+}
+
+bool Point::compare(const Point & p) const{
+    return (x==p.x && y==p.y && strcmp(nom,p.nom)==0);
+}
+
+Point & Point::operator= (const Point & obj){
+    x = obj.x;
+    y = obj.y;
+    delete[] nom;
+    nom = new char[strlen(obj.nom)+1];
+    strcpy(nom, obj.nom);
+    return *this;
 }
