@@ -3,16 +3,24 @@
 
 int main(){
     Point A, *B;
-    const Point C(2,3,"ABC");
+    //const Point C(2,3,"ABC");
     B = new Point(1.3, "BBB");
-    A.affiche();
+    // A.affiche();
     // A.saisie();
     // B->saisie();
     // A.affiche();
-    B->affiche();
-    C.affiche();
+    // B->affiche();
+    // C.affiche();
+    if (B->compare(A))
+    {
+        std::cout << "egalite" << std::endl;
+    }
+    else{
+        std::cout << "non egeaux" << std::endl;
+    }
+    
     delete B;
-    std::cout << "*********" << std::endl;
+    // std::cout << "*********" << std::endl;
 
     return 0;
 }
