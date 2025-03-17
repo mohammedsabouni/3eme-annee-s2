@@ -7,6 +7,7 @@ private:
     char *s;
 public:
     Chaine();
+    Chaine(const char *);
     Chaine(const Chaine &);
     ~Chaine();
     void Afficher()const;

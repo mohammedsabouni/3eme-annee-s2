@@ -1,11 +1,11 @@
 #include "Chaine.hpp"
 #include <cstring>
 
-// Chaine::Chaine()
-// {
-//     s = new char [200];
-//     std::cin.getline(s,200);
-// }
+Chaine::Chaine(const char * c)
+{
+    s = new char [200];
+    strcpy(s,c);
+}
 Chaine::Chaine()
 {
     s = new char [200];
