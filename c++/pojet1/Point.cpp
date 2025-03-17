@@ -66,3 +66,42 @@ Point & Point::operator= (const Point & obj){
     strcpy(nom, obj.nom);
     return *this;
 }
+
+Point & Point::operator+ (const Point & p){
+    static Point res;
+    res.x = x + p.x;
+    res.y = y + p.y;
+    strcpy(res.nom, p.nom);
+    strcat(res.nom, nom);
+    
+    return res;  
+}
+
+Point & Point::operator* (const float & p){
+    static Point res;
+    res.x = x * p;
+    res.y = y * p;
+    strcpy(res.nom, nom);
+    
+    return res;  
+}
+
+Point & operator* (const float & h, const Point & p) {
+    static Point res;
+    res.x = h * p.x;
+    res.y = h * p.y;
+    strcpy(res.nom, p.nom);
+    std::cout << "fction amie" << std::endl;
+    return res;
+}
+
+std::istream & operator>> (std::istream & str, Point & p){
+    std::cout << "entrez x , y et nom" << std::endl;
+    str>>p.x>>p.y>>p.nom ;
+    return str;
+}
+
+std::ostream & operator<< (std::ostream & str,const Point & p){
+    str<<p.nom<<"("<<p.x<<", "<<p.y<<")" ;
+    return str;
+}
