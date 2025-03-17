@@ -2,7 +2,7 @@
 #include"Chaine.hpp"
 
 int main(){
-    Chaine bnjr = Chaine();
+    Chaine bnjr = Chaine("bonjour");
     bnjr.Afficher();
     std::cout << bnjr.Longueur() << std::endl;
     bnjr.Inserer('m',2);
