@@ -18,7 +18,7 @@ Compte::Compte(char * nomClient_){
 }
     
 Compte::~Compte(){
-    delete nomClient;
+    delete []nomClient;
 }
 
 void Compte::retrait(){

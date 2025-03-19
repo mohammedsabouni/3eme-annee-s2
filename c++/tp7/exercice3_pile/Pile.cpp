@@ -3,7 +3,7 @@
 
 Pile::Pile(int t){
     dim = t;
-    adr = new int[t];
+    adr = new int[dim];
     taille = 0;
 }
 
