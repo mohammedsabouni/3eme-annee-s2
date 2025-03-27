@@ -1,5 +1,6 @@
-#ifndef Point
- 
+#ifndef __Point__
+    #define __Point__
+    #include <iostream>
     class Point
     {
         private:
@@ -20,7 +21,7 @@
             Point & operator+ (const Point &);
             Point & operator* (const float & );
             friend Point & operator* (const float &, const Point &);
-            friend std::istream & operator>> (std::istream &, Point &);  
+            friend std::istream & operator>> (std::istream &, Point &); 
             friend std::ostream & operator<< (std::ostream &,const Point &);
     };
        
