@@ -3,8 +3,20 @@
 
 Chaine::Chaine(const char * c)
 {
-    s = new char [200];
-    strcpy(s,c);
+    int i = 0;
+    int cmpt = 0;
+    while (*(c+i)!= '\0')
+    {
+        cmpt++;
+        i++;
+    }
+    
+    s = new char [cmpt+1];
+    for (int i = 0; i < cmpt+1; i++)
+    {
+        *(s+i) = *(c+i);
+    };
+    
 }
 Chaine::Chaine()
 {
@@ -29,7 +41,12 @@ void Chaine::Afficher()const{
 }
 
 int Chaine::Longueur()const{
-    return strlen(this -> s);
+    int i = 0;
+    while (*(s+i)!= '\0')
+    {
+        i++;
+    };
+    return i;
 }
 
 void Chaine::Inserer(char c, int pos){
