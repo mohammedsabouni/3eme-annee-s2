@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <title>meteo</title>
+    <script src="https://kit.fontawesome.com/c2e2f83bae.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="top-info">
+            <div class="top-deg" id="topDeg">21°</div>
+            <div class="city" id="city">Oujda</div>
+            <div class="sup-info">
+                <span id="feels"><span id="max">26</span>°/<span id="min">14</span >° Feels like <span id="feelsLike">26°</span></span>
+                <span id="date">Sat, 17:00</span>
+            </div>
+        </div>
+        <div class="top-icon" id="topIcon">
+            <i class="fa-solid fa-cloud-bolt" ></i>
+        </div>
+    </header>
+    <div class="hourly" id="HourlyList">
+        <ul>
+            <li>
+                <div class="hour">12:00</div>
+                <div class="hour-icon">
+                    <i class="fa-solid fa-sun"></i>
+                </div>
+                <div class="hour-deg">26°</div>
+                <div class="precipitation">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span>0 %</span>
+                </div>
+            </li>
+            <li>
+                <div class="hour">12:00</div>
+                <div class="hour-icon">
+                    <i class="fa-solid fa-sun"></i>
+                </div>
+                <div class="hour-deg">26°</div>
+                <div class="precipitation">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span>0 %</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="main" >
+        <ul id="dailyList">
+            <li>
+                <span class="day">Today</span>
+                <div class="m-prep">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span>0 %</span>
+                </div>
+                <div class="m-icon">
+                    <i class="fa-solid fa-sun"></i>
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+                <div class="m-deg">
+                    <span>26°</span>
+                    <span>26°</span>
+                </div>
+
+            </li>
+            <li>
+                <span class="day">Today</span>
+                <div class="m-prep">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span>0 %</span>
+                </div>
+                <div class="m-icon">
+                    <i class="fa-solid fa-sun"></i>
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+                <div class="m-deg">
+                    <span>26°</span>
+                    <span>26°</span>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <div class="sunrise">
+            <span>Sunrise</span>
+            <span id="sunriseTime">05:00</span>
+            <i class="fa-solid fa-sun"></i>
+        </div>
+        <div class="sunset">
+            <span>Sunset</span>
+            <span id="sunsetTime">19:00</span>
+            <i class="fa-solid fa-moon"></i>
+        </div>
+    </footer>
+</div>
+<script src="js/script2.js"></script>
+</body>
+</html>
